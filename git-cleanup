@@ -1,0 +1,4 @@
+#!/bin/bash
+git branch --merged |\
+    grep -v '*\|staging\|master' |\
+    xargs git branch -d
