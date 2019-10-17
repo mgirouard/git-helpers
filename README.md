@@ -4,11 +4,11 @@ Day-to-day helpers when interacting with git.
 
 ## Build Tags
 
-    $ git buildtag
-    3-ea1a022
-
 A build tag blends the best of both worlds of subversion and git. It's a
 sequential revision number and a corresponding commit hash.
+
+    $ git buildtag
+    3-ea1a022
 
 This is really useful in cases where you need to uniquely identify versions but
 also compare them with previously released versions. It provides a unique
@@ -19,20 +19,20 @@ points to the build.
 
 # Cleanup
 
+Cleanup wipes out branches which are already merged into the current HEAD.
+
     $ git cleanup
     Deleted branch mgirouard/it-works (was ea1a022).
-
-Cleanup wipes out branches which are already merged into the current HEAD.
 
 Cleanup assumes that `staging` and `master` are special and won't ever delete
 them. It also won't delete the currently active branch.
 
 # Last Touched
 
+Last touched files are files which were affected during the last commit.
+
     $ git last-touched
     git-versions
-
-Last touched files are files which were affected during the last commit.
 
 # Versions
 
