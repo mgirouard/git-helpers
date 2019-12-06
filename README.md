@@ -19,13 +19,18 @@ points to the build.
 
 # Cleanup
 
-Cleanup wipes out branches which are already merged into the current HEAD.
+Cleanup wipes out local branches which are already merged into the current
+HEAD.
 
     $ git cleanup
     Deleted branch mgirouard/it-works (was ea1a022).
 
-Cleanup assumes that `staging` and `master` are special and won't ever delete
+Cleanup assumes that `staging` and `master`are special and won't ever delete
 them. It also won't delete the currently active branch.
+
+Note: this only works for local branches. This is less of a problem with
+graphical merge tools like Bitbucket or GitHub where you can opt-in to having
+the topic branch removed after a successful merge.
 
 # Last Touched
 
