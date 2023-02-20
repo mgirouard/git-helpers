@@ -55,3 +55,13 @@ Versions assumes semver tags and orders them accordingly.
     v0.0.9
     v0.0.10
 
+# Copy
+
+Copy is like `git mv` where the change is added to the index, but the source
+file will remain in place.
+
+    $ git cp ~/docs/common/bsd-3-clause.txt LICENSE.txt
+    $ git status -sb
+    ## bugfix/missing-license
+     A  LICENSE.txt
+
